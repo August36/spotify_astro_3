@@ -1,9 +1,28 @@
 ---
 import type { Image } from "astro:assets";
-import Card from "../components/Card.astro"
+import Button  from "../components/Button.astro";
 ---
 
 <nav>
-    <a href="/#">Tilmeld dig</a>
-    <a href="/#">Log på</a>
+    <img src="../../public/back-btn.svg" alt="">
+    <div>
+        <Button variant="secondary">Tilmeld dig</Button>
+        <Button variant="primary">Log på</Button>
+    </div>
 </nav>
+
+<style>
+    nav {
+        display:flex;
+        justify-content:space-between;
+        height:80px;
+        align-items:center;
+        background-color:#101010;
+        padding:0 10px 0 10px;
+    }
+
+    img {
+        border-radius:20px;
+        margin-left:10px;
+    }
+</style>
