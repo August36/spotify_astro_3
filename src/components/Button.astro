@@ -1,0 +1,23 @@
+---
+const {variant, size} = Astro.props;
+---
+<a class={variant} href="/#">
+<slot />
+</a>
+
+<style>
+a {
+    padding: 15px 22px 15px 22px;
+    border-radius:20px;
+    text-decoration:none;
+}
+.primary {
+    background-color:blue;
+    color:white;
+}
+
+.secondary {
+    background-color:white;
+    color:blue;
+}
+</style>

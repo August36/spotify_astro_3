@@ -1,0 +1,20 @@
+---
+const {header, text} = Astro.props;
+---
+<article>
+    <h1>{header}</h1>
+    <p>{text}</p>
+</article>
+
+<style>
+    article {
+        display: flex;
+        justify-content: space-between;
+        gap:1em;
+        background-color:#1c1d1c;
+    }
+
+    p {
+        color: #929393;
+    }
+</style>

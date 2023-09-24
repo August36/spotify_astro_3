@@ -1,0 +1,47 @@
+---
+import "../styles/style.css";
+import Card from "../components/Card.astro";
+import Nav from "../components/Nav.astro";
+import Button  from "../components/Button.astro";
+import Playlist_header from "../components/Playlist_header.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<Nav />
+		
+		<main>
+			<Playlist_header header="Spotify-playlister" text ="Vis alle">
+			</Playlist_header>
+			<section class="playlist_grid">
+				<Card header="Today's Top..." text="Zach Bryan & Kacer Musgrav...">
+					<img src="/65-150x150.jpg" alt="Playlist image">
+				</Card>
+				<Card header="RapCaviar" text="New music from Doja Cat, Lil Tecca ">
+					<img src="/68-150x150.jpg" alt="Playlist image">
+				</Card>
+				<Card header="All out 2010s" text="The biggest songs of the 2010s.">
+					<img src="/76-150x150.jpg" alt="Playlist image">
+				</Card>
+				<Card header="Rock Classics" text="Rock legends & epic songs that continue t...">
+					<img src="/240-150x150.jpg" alt="Playlist image">
+				</Card>
+				<Card header="Chill Hits" text="Kick back to the best new and recent chill...">
+					<img src="/325-150x150.jpg" alt="Playlist image">
+				</Card>
+				<Card header="Viva Latino" text="Today's top Latin hits, elevando nues...">
+					<img src="/331-150x150.jpg" alt="Playlist image">
+				</Card>
+			</section>
+			<Button variant="primary" size="medium">Log på</Button>
+			<Button variant="secondary">Tilmeld dig</Button>
+		</main>
+	</body>
+</html>

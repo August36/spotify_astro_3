@@ -1,0 +1,15 @@
+.playlist_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  color: #fff;
+}
+
+main {
+    background-color:#1c1d1c;
+}

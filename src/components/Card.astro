@@ -1,0 +1,27 @@
+---
+// const header = Astro.props.header;
+// const text = Astro.props.text;
+
+const {header, text} = Astro.props;
+---
+
+<article>
+    <slot />
+    <h2>{header}</h2>
+    <p>{text}</p>
+</article>
+
+<style>
+h2 {
+    text-align: center;
+}
+article {
+    background-color: #141415;
+    width:150px;
+}
+
+p {
+    color: #929393;
+    margin-left:5px;
+}
+</style>
