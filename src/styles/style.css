@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 1rem;
+    background-color: #1c1d1c;
+    margin: 0 10px 0 10px;
 }
 
 h1,
@@ -11,5 +13,7 @@ h3 {
 }
 
 main {
-    background-color:#1c1d1c;
+    background-color:#010001;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }

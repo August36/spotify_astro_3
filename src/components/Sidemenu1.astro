@@ -1,26 +1,23 @@
 ---
 import Iconlinks from "../components/Iconlinks.astro";
 ---
-
-<Iconlinks variant="spotifylogo">
-    <img src="logo.svg" alt="Spotify logo">
-</Iconlinks>
-<Iconlinks>
-    <img src="search-icon.svg" alt="Spotify logo">
-</Iconlinks>
-<Iconlinks>
-    <img src="home.svg" alt="Spotify logo">
-</Iconlinks>
-
-
-<!-- <div>
-    <img class="spotifylogo" src="../../public/logo.svg" alt="Spotify logo">
-    <img src="../../public/home.svg" alt="Home icon">
-    <img src="../../public/search-icon.svg" alt="Search icon">
+<div>
+    <Iconlinks variant="spotifylogo" text="Spotify">
+        <img src="logo-alt.svg" alt="Spotify logo">
+    </Iconlinks>
+    <Iconlinks text="Hjem">
+        <img src="home.svg" alt="Spotify logo">
+    </Iconlinks>
+    <Iconlinks text="Søg">
+        <img src="search-icon.svg" alt="Spotify logo">
+    </Iconlinks>
 </div>
 
 <style>
-    .spotifylogo {
-        width:80px;
+    div {
+        display:flex;
+        flex-direction:column;
+        background-color:#1c1d1c;
+        height:300px;
     }
-</style> -->
+</style>
